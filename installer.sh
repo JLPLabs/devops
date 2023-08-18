@@ -6,10 +6,6 @@ make all test
 
 # put src/lua on the path
 echo "path+=$HOME/devops/lua-5.4.6/src" > $HOME/.zshenv
-source $HOME/.zshenv
 
-cd ..
-echo ""
-echo "which lua // and version ... "
-which lua
-lua -v
+# launch new window (macos)
+osascript -e 'tell app "Terminal" to do script "echo $path"'
