@@ -15,6 +15,7 @@ LUA=$HOME/devops/lua-5.4.6/src
 LUAINC=$HOME/devops/lua-5.4.6/src
 
 cd philanc-luatweetnacl-9507d35
+make
 
 # launch new window (macos)
 osascript -e 'tell app "Terminal" to do script "echo $path"'
