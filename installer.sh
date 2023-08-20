@@ -14,6 +14,14 @@ unzip luatweetnacl.master.zip
 cd philanc-luatweetnacl-9507d35
 LUADIR=$HOME/devops/lua-5.4.6/src LUA=$HOME/devops/lua-5.4.6/src LUAINC=$HOME/devops/lua-5.4.6/src make
 
+##### NOTE  #####
+# the make file luatweetnacl needs to be changed to link correctly on macos
+# need to use 'bundle' and 'bundle_loader' and path to Lua interpreter
+# e.g., gcc -bundle -bundle_loader /usr/local/bin/lua -o monlib.so monlib.o
+
+# see instructions for making the library on macos...
+# http://lua-users.org/lists/lua-l/2022-10/msg00057.html
+#################
 
 
 # launch new window (macos)
