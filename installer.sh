@@ -14,6 +14,9 @@ unzip luatweetnacl.master.zip
 cp luatweetnacl_makefile philanc-luatweetnacl-9507d35/Makefile
 cd philanc-luatweetnacl-9507d35
 make
+cp luatweetnacl.so ../lua-5.4.6/.
+cd ../lua-5.4.6
+
 
 ##### NOTE  #####
 # the make file luatweetnacl needs to be changed to link correctly on macos
@@ -26,4 +29,4 @@ make
 
 
 # launch new window (macos)
-osascript -e 'tell app "Terminal" to do script "echo $path"'
+#osascript -e 'tell app "Terminal" to do script "echo $path"'
