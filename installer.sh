@@ -14,8 +14,8 @@ unzip luatweetnacl.master.zip
 cp luatweetnacl_makefile philanc-luatweetnacl-9507d35/Makefile
 cd philanc-luatweetnacl-9507d35
 make
-cp luatweetnacl.so ../lua-5.4.6/.
-cd ../lua-5.4.6
+cp luatweetnacl.so ../lua-5.4.6/src/.
+cd ../lua-5.4.6/src
 
 
 ##### NOTE  #####
