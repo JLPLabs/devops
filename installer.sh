@@ -7,6 +7,7 @@ cd ..
 
 # put src/lua on the path
 echo "path+=$HOME/devops/lua-5.4.6/src" > $HOME/.zshenv
+source $HOME/.zshenv
 
 # get luatweetnacl and build
 curl -L  -o luatweetnacl.master.zip http://github.com/philanc/luatweetnacl/zipball/master/
