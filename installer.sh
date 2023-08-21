@@ -7,7 +7,7 @@ cd ..
 
 # put src/lua on the path
 echo "path+=$HOME/devops/lua-5.4.6/src" > $HOME/.zshenv
-source $HOME/.zshenv
+
 
 # get luatweetnacl and build
 curl -L  -o luatweetnacl.master.zip http://github.com/philanc/luatweetnacl/zipball/master/
@@ -30,4 +30,4 @@ cd ../lua-5.4.6/src
 
 
 # launch new window (macos)
-#osascript -e 'tell app "Terminal" to do script "echo $path"'
+osascript -e 'tell app "Terminal" to do script "echo $path"'
